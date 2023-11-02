@@ -1,10 +1,8 @@
 <?php include('../../templates/header.php'); ?>
 
-Listar servicios
-
 <div class="card">
     <div class="card-header">
-        <a name="" id="" class="btn btn-primary" href="#" role="button">Agregar registros</a>
+        <a name="" id="" class="btn btn-primary" href="crear.php" role="button">Agregar registros</a>
     </div>
     <div class="card-body">
         <div class="table-responsive-sm">
@@ -24,6 +22,7 @@ Listar servicios
                         <td>fa-book</td>
                         <td>Tutoria</td>
                         <td>Servicios de tutoría para programación</td>
+                        <td>Editar | Eliminar </td>
                     </tr>
 
                 </tbody>
