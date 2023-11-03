@@ -1,3 +1,26 @@
+<?php 
+
+include('../../bd.php');
+if($_POST){
+    
+    $icono = (isset($_POST['icono']))?$_POST['icono']:"";
+    $titulo = (isset($_POST['titulo']))?$_POST['titulo']:"";
+    $descripcion = (isset($_POST['descripcion']))?$_POST['descripcion']:"";
+
+    $sentencia = $conn->prepare("INSERT INTO `servicios` (`id`, `icono`, `titulo`, `descripcion`) VALUES (NULL, :icono, :titulo, :descripcion);");
+
+    $sentencia->bindParam(':icono',$icono);
+    $sentencia->bindParam(':titulo',$titulo);
+    $sentencia->bindParam(':descripcion',$descripcion);
+    $sentencia->execute();
+
+    $mensaje = "Registro agregado correctamente";
+    header("Location:index.php?mensaje=" . $mensaje);
+
+
+    }?>
+
+
 <?php include('../../templates/header.php'); ?>
 
 <div class="card">
@@ -24,8 +47,8 @@
 
                 </div>
 
-<button type="submit" class="btn btn-success">Agregar</button>
-<a name="" id="" class="btn btn-primary" href="index.php" role="button">Cancelar</a>
+                <button type="submit" class="btn btn-success">Agregar</button>
+                <a name="" id="" class="btn btn-primary" href="index.php" role="button">Cancelar</a>
         </form>
     </div>
 
@@ -34,6 +57,6 @@
     </div>
 
 </div>
-</div>
+
 
 <?php include('../../templates/footer.php'); ?>
