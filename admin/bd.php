@@ -5,7 +5,6 @@ $username = "root";
 $password = "";
 
 try{
-
     $conn = new PDO("mysql:host=$server;dbname=$dbname",$username,$password);
     echo "La conexión se realizó correctamente";
 

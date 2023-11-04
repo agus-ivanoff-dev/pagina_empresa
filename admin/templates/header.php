@@ -22,12 +22,12 @@ $url_base = "http://localhost/pagina-empresa/admin/";
     <nav class="navbar navbar-expand navbar-light bg-light">
         <div class="nav navbar-nav">
             <a class="nav-item nav-link active" href="#" aria-current="page">Administrador <span class="visually-hidden">(current)</span></a>
-            <a class="nav-item nav-link" href="<?php echo $url_base;?>/secciones/servicios">Servicios</a>
-            <a class="nav-item nav-link" href="<?php echo $url_base;?>/secciones/portafolio">Portafolio</a>
-            <a class="nav-item nav-link" href="<?php echo $url_base;?>/secciones/entradas">Entradas</a>
-            <a class="nav-item nav-link" href="<?php echo $url_base;?>/secciones/equipo">Equipo</a>
-            <a class="nav-item nav-link" href="<?php echo $url_base;?>/secciones/configuraciones">Configuraciones</a>
-            <a class="nav-item nav-link" href="<?php echo $url_base;?>/secciones/usuarios">Usuarios</a>
+            <a class="nav-item nav-link" href="<?php echo $url_base;?>../../proyectos/pagina_empresa/admin/secciones/servicios">Servicios</a>
+            <a class="nav-item nav-link" href="<?php echo $url_base;?>../../proyectos/pagina_empresa/admin/secciones//portafolio">Portafolio</a>
+            <a class="nav-item nav-link" href="<?php echo $url_base;?>../../proyectos/pagina_empresa/admin/secciones//entradas">Entradas</a>
+            <a class="nav-item nav-link" href="<?php echo $url_base;?>../../proyectos/pagina_empresa/admin/secciones//equipo">Equipo</a>
+            <a class="nav-item nav-link" href="<?php echo $url_base;?>../../proyectos/pagina_empresa/admin/secciones//configuraciones">Configuraciones</a>
+            <a class="nav-item nav-link" href="<?php echo $url_base;?>../../proyectos/pagina_empresa/admin/secciones//usuarios">Usuarios</a>
             <a class="nav-item nav-link" href="<?php echo $url_base;?>login.php">Cerrar sesión</a>
         </div>
     </nav>
